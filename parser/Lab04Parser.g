@@ -34,5 +34,8 @@ options {
   5. Aqui no estan todos los tokens, pero en los proximos labs vamos a editar esta gramatica
 
 */
-start        :   WHITESPACE;
+start        :   declaraciones | expresiones;
+
+declaraciones: KEYWORD variable
+
 
